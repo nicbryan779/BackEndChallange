@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "f6ca9151-333a-4ab0-936e-6de0ccb4f096",
+		"name": "BackEnd Challange",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:7000/api/indexing",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:7000/api/indexing",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"indexing"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:7000/api/kurs/2018-05-19",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:7000/api/kurs/2018-05-19",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"kurs",
+						"2018-05-19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:7000/api/kurs?startdate=2018-05-18&enddate=2018-05-25",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:7000/api/kurs?startdate=2018-05-18&enddate=2018-05-25",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"kurs"
+					],
+					"query": [
+						{
+							"key": "startdate",
+							"value": "2018-05-18"
+						},
+						{
+							"key": "enddate",
+							"value": "2018-05-25"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:7000/api/kurs/USD?startdate=2018-05-18&enddate=2018-05-25",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:7000/api/kurs/USD?startdate=2018-05-18&enddate=2018-05-25",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"kurs",
+						"USD"
+					],
+					"query": [
+						{
+							"key": "startdate",
+							"value": "2018-05-18"
+						},
+						{
+							"key": "enddate",
+							"value": "2018-05-25"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:7000/api/kurs/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"symbol\": \"AAA\",\r\n\t\"e_rate\": {\r\n\t\t\"jual\": 1803.55,\r\n\t\t\"beli\": 177355\r\n\t},\r\n\t\"tt_counter\": {\r\n\t\t\"jual\": 1803.55,\r\n\t\t\"beli\": 177355\r\n\t},\r\n\t\"bank_notes\": {\r\n\t\t\"jual\": 1803.55,\r\n\t\t\"beli\": 177355\r\n\t},\r\n\t\"date\": \"2018-05-20\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "localhost:7000/api/kurs/",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"kurs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:7000/api/kurs/",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"symbol\": \"AAA\",\r\n\t\"e_rate\": {\r\n\t\t\"jual\": 1803.55,\r\n\t\t\"beli\": 177355\r\n\t},\r\n\t\"tt_counter\": {\r\n\t\t\"jual\": 1803.55,\r\n\t\t\"beli\": 177355\r\n\t},\r\n\t\"bank_notes\": {\r\n\t\t\"jual\": 1803.55,\r\n\t\t\"beli\": 177355\r\n\t},\r\n\t\"date\": \"2018-05-20\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "localhost:7000/api/kurs/",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"kurs",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
